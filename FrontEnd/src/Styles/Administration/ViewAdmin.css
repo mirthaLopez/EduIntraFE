@@ -1,0 +1,68 @@
+.view-admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-left: 350px;
+    width: 70%;
+}
+
+.view-admin-search-input {
+    margin-bottom: 20px;
+    width: 60%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MuiInputAdornment-root {
+    color: #5f6368;
+}
+
+.MuiTable-root {
+    margin-top: 20px;
+}
+
+.MuiTableCell-root {
+    font-size: 14px;
+    padding: 15px;
+    color: #555;
+}
+
+.MuiIconButton-root {
+    padding: 8px;
+}
+
+.MuiIconButton-root:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .view-admin-container {
+        margin-left: 5px; /* Elimina el margen izquierdo */
+        width: 95%; /* El contenedor ocupa todo el ancho de la pantalla */
+        padding: 10px; /* Reduce el padding para pantallas pequeñas */
+        margin-top: 20px;
+    }
+
+    .view-admin-search-input {
+        width: 100%; /* El input de búsqueda ocupa todo el ancho */
+        padding: 10px; /* Ajuste del padding */
+    }
+
+    .MuiTableCell-root {
+        font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+        padding: 8px; /* Ajuste del padding en celdas de la tabla */
+    }
+
+    .MuiIconButton-root {
+        padding: 6px; /* Reduce el padding de los iconos */
+    }
+
+    .MuiIconButton-root:hover {
+        background-color: #f44336;
+        color: white;
+    }
+}

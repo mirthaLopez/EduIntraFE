@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Títulos */
+.title-blog-form,
+.title-history-blog {
+  font-family: "Bebas Neue", sans-serif;
+  color: #043368;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor principal */
+.main-div-blog {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.main-div-form-blog {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Formularios */
+.form-container-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-item-blog label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-blog {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Campo de imagen */
+.blog-image-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Vista previa de imagen */
+.image-preview h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #043368;
+}
+
+/* Botón */
+.btn-send-blog {
+  background-color: #eb392c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-send-blog:hover {
+  background-color: #d02a23;
+}
+
+/* Historial */
+.container-history-blog {
+  width: 100%;
+  max-width: 900px;
+}
+
+.grid-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #043368;
+}
+
+.blog-card p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.btn-delete-blog {
+  background-color: #d02a23;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.btn-delete-blog:hover {
+  background-color: #a01a17;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-div-form-blog,
+  .container-history-blog {
+    width: 90%;
+  }
+}

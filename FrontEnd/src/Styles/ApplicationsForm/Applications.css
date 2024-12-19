@@ -1,0 +1,217 @@
+/* Estilos generales */
+.accordion-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+}
+
+.divApplication {
+  margin-left: 320px;
+  margin-right: 20px;
+}
+
+.titles-accordion {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+}
+
+.icon-search {
+  cursor: pointer;
+}
+
+/* Cabecera de solicitudes */
+.applications-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.input-search-applications {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-search-applications:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.applications-title {
+  font-size: 34px;
+  margin: 0;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.applications-title {
+  font-family: "Bebas Neue", sans-serif;
+  color: #043368;
+}
+
+.header-admin {
+  background-color: #444444;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-header-admin {
+  height: 40px;
+  width: auto;
+}
+
+.div-logo-header {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.application-info, .payment-info {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+/* Botones personalizados */
+.accept-button {
+  background-color: #043368;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.accept-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.reject-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reject-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.div-icon-mui .MuiSvgIcon-root {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.div-icon-mui .MuiSvgIcon-root:hover {
+  transform: scale(1.2);
+  color: #e6840a;
+}
+
+/* Estilos Responsivos */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .applications-header {
+    display: block;
+    text-align: center;
+    gap: 0;
+  }
+
+  .input-search-applications {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .applications-title {
+    margin-left: 20px;
+  }
+
+  .accordion-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divApplication {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header-admin {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .div-logo-header {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .accept-button, .reject-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .applications-header {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .divApplication {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .applications-title {
+    font-size: 30px;
+  }
+
+  .accept-button, .reject-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+  .applications-header {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+  }
+
+  .input-search-applications {
+    width: 300px;
+  }
+
+  .accordion-details {
+    flex-direction: row;
+  }
+
+  .accept-button, .reject-button {
+    width: auto;
+  }
+}
+
+

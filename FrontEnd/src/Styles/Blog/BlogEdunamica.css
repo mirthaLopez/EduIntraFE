@@ -1,0 +1,116 @@
+/* Estilos generales para el contenedor de blogs */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  justify-items: center; /* Centrar las tarjetas horizontalmente */
+  padding: 30px;
+  background-color: #f1f1f1; /* Gris claro */
+}
+
+/* Título del blog */
+.blog-title-div {
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: #2c5c92;
+  background-color: #f1f1f1; /* Gris claro */
+}
+
+/* Estilos para cada tarjeta de blog */
+.blog-card {
+  max-width: 265px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-indent: 0%;
+}
+
+/* Estilo para la sección del creador */
+.blog-creator {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Estilo para las acciones de la tarjeta del blog */
+.blog-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+  background-color: #25D366; /* WhatsApp verde */
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Botón de Facebook */
+.facebook-button {
+  background-color: #1877F2; /* Facebook azul */
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Modal de compartir */
+.share-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  outline: none;
+}
+
+/* Botón de cerrar modal */
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Responsive: ajustar a menos columnas en pantallas pequeñas */
+@media (max-width: 1024px) {
+  .blog-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    grid-template-columns: 1fr; /* 1 columna */
+  }
+}
